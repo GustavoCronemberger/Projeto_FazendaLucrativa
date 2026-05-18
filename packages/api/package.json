@@ -1,0 +1,30 @@
+{
+  "name": "@fazenda-lucrativa/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@fazenda-lucrativa/auth": "workspace:*",
+    "@fazenda-lucrativa/db": "workspace:*",
+    "@fazenda-lucrativa/env": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "@types/pg": "catalog:",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "drizzle-orm": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@fazenda-lucrativa/config": "workspace:*",
+    "@types/express": "catalog:",
+    "typescript": "^6"
+  }
+}

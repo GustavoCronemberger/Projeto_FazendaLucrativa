@@ -1,0 +1,41 @@
+{
+  "name": "fazenda-lucrativa",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @fazenda-lucrativa/db db:push",
+    "db:studio": "turbo -F @fazenda-lucrativa/db db:studio",
+    "db:generate": "turbo -F @fazenda-lucrativa/db db:generate",
+    "db:migrate": "turbo -F @fazenda-lucrativa/db db:migrate",
+    "db:start": "turbo -F @fazenda-lucrativa/db db:start",
+    "db:watch": "turbo -F @fazenda-lucrativa/db db:watch",
+    "db:stop": "turbo -F @fazenda-lucrativa/db db:stop",
+    "db:down": "turbo -F @fazenda-lucrativa/db db:down",
+    "check": "oxlint && oxfmt --write"
+  },
+  "dependencies": {
+    "@fazenda-lucrativa/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@fazenda-lucrativa/config": "workspace:*",
+    "@types/node": "^22.13.14",
+    "lefthook": "^2.0.13",
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0",
+    "turbo": "^2.8.12",
+    "typescript": "^6"
+  },
+  "packageManager": "pnpm@11.1.2"
+}

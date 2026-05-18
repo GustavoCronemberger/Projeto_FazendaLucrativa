@@ -1,0 +1,25 @@
+{
+  "name": "@fazenda-lucrativa/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@better-auth/expo": "catalog:",
+    "@fazenda-lucrativa/db": "workspace:*",
+    "@fazenda-lucrativa/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@fazenda-lucrativa/config": "workspace:*",
+    "typescript": "^6"
+  }
+}

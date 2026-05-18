@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "scheme": "fazenda-lucrativa",
+    "userInterfaceStyle": "automatic",
+    "orientation": "default",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "fazenda-lucrativa",
+    "slug": "fazenda-lucrativa",
+    "plugins": ["expo-font"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
