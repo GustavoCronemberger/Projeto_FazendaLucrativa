@@ -46,7 +46,7 @@ Then, run the development server:
 pnpm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to see the web application.
+Open [http://localhost:3001](http://localhost:3001) in your browser to see the web application.
 Use the Expo Go app to run the mobile application.
 The API is running at [http://localhost:3000](http://localhost:3000).
 
