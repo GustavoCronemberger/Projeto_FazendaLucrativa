@@ -3,7 +3,7 @@ import { todoRouter } from "./todo";
 
 export const appRouter = router({
   healthCheck: publicProcedure.query(() => {
-    return "OK";
+    return "OKK";
   }),
   privateData: protectedProcedure.query(({ ctx }) => {
     return {
