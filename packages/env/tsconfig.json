@@ -1,3 +1,4 @@
 {
-  "extends": "@fazenda-lucrativa/config/tsconfig.base.json"
+  "extends": "@fazenda-lucrativa/config/tsconfig.base.json",
+  "include": ["src/**/*.ts"]
 }

@@ -10,6 +10,8 @@ export const env = createEnv({
     CORS_ORIGIN: z.url(),
     NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
   },
+  clientPrefix: "PUBLIC_",
+  client: {},
   runtimeEnv: process.env,
   emptyStringAsUndefined: true,
 });
